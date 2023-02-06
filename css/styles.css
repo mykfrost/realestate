@@ -875,3 +875,49 @@ a {
 .callout-signup {
   transform: translateY(5rem);
 }
+
+/*images**/
+
+.imgs {
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.imgs > div,
+img {
+  padding: inherit;
+  width: 400px;
+  height: 300px;
+}
+@media screen and (min-width: 768px) {
+  .imgs {
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+  }
+}
+
+.house3 {
+  width: 400px;
+  height: 400px;
+}
+
+.round-images {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  flex-direction: row;
+}
+.round-images > img {
+  border-radius: 50%;
+  padding: 0px;
+  width: 30px;
+  height: 30px;
+}
+.review,
+p {
+  display: flex;
+  margin: 0;
+}
