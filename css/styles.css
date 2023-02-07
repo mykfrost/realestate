@@ -39,12 +39,12 @@ body {
 h1,
 h2,
 h3 {
-  color: var(--color-heading);
+  color: var(--color-body);
   margin-bottom: 1em;
 }
 
 h1 {
-  font-size: 7rem;
+  font-size: 5rem;
 }
 
 h2 {
@@ -65,7 +65,7 @@ p {
   }
 
   h1 {
-    font-size: 8rem;
+    font-size: 5rem;
   }
   h2 {
     font-size: 4rem;
@@ -636,9 +636,17 @@ a {
 .container {
   max-width: 1140px;
   margin: 0 auto;
-  padding: 0;
+  padding: 1rem;
   justify-content: center;
   align-items: center;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+  }
 }
 
 .nav {
@@ -887,6 +895,7 @@ a {
   align-items: center;
   display: flex;
   flex-direction: column;
+  gap: 3rem;
 }
 .imgs {
   padding: 2rem;
@@ -919,7 +928,7 @@ a {
 @media screen and (min-width: 768px) {
   .house3 {
     width: 100%;
-    height: 821px;
+    height: 670px;
   }
 }
 .round-images {
@@ -947,8 +956,11 @@ p {
   padding-left: 1rem;
 }
 .dark {
+  margin-right: 1rem;
+  margin-left: 1rem;
+  padding: 1rem;
   display: block;
-  color: #777;
+  color: var(--color-body-darker);
   padding: 10px;
   background-color: #222;
 }
