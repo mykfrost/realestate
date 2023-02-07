@@ -285,6 +285,7 @@ a {
 .input-group {
   border: 1px solid var(--color-border);
   border-radius: var(--border-radius);
+  margin: 2rem 0 2rem 0;
   display: flex;
 }
 .input-group .input {
@@ -635,6 +636,9 @@ a {
 .container {
   max-width: 1140px;
   margin: 0 auto;
+  padding: 0;
+  justify-content: center;
+  align-items: center;
 }
 
 .nav {
@@ -878,16 +882,19 @@ a {
 
 /*images**/
 
+.images {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
 .imgs {
   padding: 2rem;
   display: flex;
   justify-content: center;
   flex-direction: column;
-}
-.imgs > div,
-img {
   padding: inherit;
-  width: 400px;
+  width: 300px;
   height: 300px;
 }
 @media screen and (min-width: 768px) {
@@ -897,14 +904,26 @@ img {
     justify-content: center;
     flex-direction: row;
   }
+  .images {
+    flex-direction: row;
+  }
 }
 
 .house3 {
-  width: 400px;
+  flex-wrap: wrap;
+  padding: 1rem;
+  width: 100%;
+
   height: 400px;
 }
-
+@media screen and (min-width: 768px) {
+  .house3 {
+    width: 100%;
+    height: 821px;
+  }
+}
 .round-images {
+  padding: 1rem;
   display: flex;
   justify-content: left;
   align-items: center;
@@ -918,6 +937,18 @@ img {
 }
 .review,
 p {
-  display: flex;
+  padding-left: 1rem;
+  display: inline;
   margin: 0;
+}
+
+.review_bg {
+  color: orange;
+  padding-left: 1rem;
+}
+.dark {
+  display: block;
+  color: #777;
+  padding: 10px;
+  background-color: #222;
 }
